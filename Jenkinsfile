@@ -3,6 +3,9 @@ node {
         checkout scm
     }
     stage ('build') {
+        // Print Message
+        echo 'Hello World!'
+        
         // Creates a file called plugin-a.txt.
         sh "git rev-parse HEAD > plugin-a.txt"
 
